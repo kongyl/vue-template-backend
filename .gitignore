@@ -1,0 +1,10 @@
+.idea
+.settings
+log
+target
+.classpath
+.project
+*.iml
+public
+application-dev.yml
+/bin/
