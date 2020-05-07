@@ -395,52 +395,52 @@ public class TemplateUserExample {
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredEqualTo(Long value) {
+        public Criteria andTokenExpiredEqualTo(LocalDateTime value) {
             addCriterion("token_expired =", value, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredNotEqualTo(Long value) {
+        public Criteria andTokenExpiredNotEqualTo(LocalDateTime value) {
             addCriterion("token_expired <>", value, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredGreaterThan(Long value) {
+        public Criteria andTokenExpiredGreaterThan(LocalDateTime value) {
             addCriterion("token_expired >", value, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredGreaterThanOrEqualTo(Long value) {
+        public Criteria andTokenExpiredGreaterThanOrEqualTo(LocalDateTime value) {
             addCriterion("token_expired >=", value, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredLessThan(Long value) {
+        public Criteria andTokenExpiredLessThan(LocalDateTime value) {
             addCriterion("token_expired <", value, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredLessThanOrEqualTo(Long value) {
+        public Criteria andTokenExpiredLessThanOrEqualTo(LocalDateTime value) {
             addCriterion("token_expired <=", value, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredIn(List<Long> values) {
+        public Criteria andTokenExpiredIn(List<LocalDateTime> values) {
             addCriterion("token_expired in", values, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredNotIn(List<Long> values) {
+        public Criteria andTokenExpiredNotIn(List<LocalDateTime> values) {
             addCriterion("token_expired not in", values, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredBetween(Long value1, Long value2) {
+        public Criteria andTokenExpiredBetween(LocalDateTime value1, LocalDateTime value2) {
             addCriterion("token_expired between", value1, value2, "tokenExpired");
             return (Criteria) this;
         }
 
-        public Criteria andTokenExpiredNotBetween(Long value1, Long value2) {
+        public Criteria andTokenExpiredNotBetween(LocalDateTime value1, LocalDateTime value2) {
             addCriterion("token_expired not between", value1, value2, "tokenExpired");
             return (Criteria) this;
         }

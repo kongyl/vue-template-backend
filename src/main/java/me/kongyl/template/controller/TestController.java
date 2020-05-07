@@ -11,9 +11,14 @@ import me.kongyl.template.util.CodeUtils;
 public class TestController {
 
     @GetMapping("/bcrypt")
-    public boolean checkBCrypt() {
-        String hashed = "$2a$10$TPylsEwRgTY2suLthNs/9eo8oY4FOp0MjKUDGQbMq.Q7POEzA/iSG";
-        return CodeUtils.bcryptCheck(CodeUtils.bcrypt("admin"), hashed);
+    public String bcrypt() {
+        return CodeUtils.bcrypt("admin");
     }
     
+    @GetMapping("/bcrypt/check")
+    public boolean checkBCrypt() {
+        String hashed = "$2a$10$Dg9WX7XjNoDeDFyqJGy2Teq.PGdJVUjGKG8kmN2wQ22ca9nbeKwuO";
+        return CodeUtils.bcryptCheck("admin", hashed);
+    }
+     
 }

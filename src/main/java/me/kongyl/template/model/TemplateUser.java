@@ -11,7 +11,7 @@ public class TemplateUser {
 
     private String token;
 
-    private Long tokenExpired;
+    private LocalDateTime tokenExpired;
 
     private String nickname;
 
@@ -59,11 +59,11 @@ public class TemplateUser {
         this.token = token == null ? null : token.trim();
     }
 
-    public Long getTokenExpired() {
+    public LocalDateTime getTokenExpired() {
         return tokenExpired;
     }
 
-    public void setTokenExpired(Long tokenExpired) {
+    public void setTokenExpired(LocalDateTime tokenExpired) {
         this.tokenExpired = tokenExpired;
     }
 
